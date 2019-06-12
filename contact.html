@@ -5,10 +5,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>contact</title>
     <meta name="contact" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,12 +26,13 @@
                 </div>
 
                 <div>
-                    <Nav>
-                        <a class="nav-link" href="index.html">About</a>
+                    <nav class="navbar-right navbar-default">
 
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="" href="index.html">About</a>
 
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="" href="portfolio.html">Portfolio</a>
+
+                        <a class="" href="contact.html">Contact</a>
 
                     </Nav>
                 </div>
@@ -38,21 +41,33 @@
     </header>
 
     <section id="Contact-Me">
-        <h1 id=CM>
+        <div class="row">
+            <div class="col"><h1 id=CM>
             Contact
         </h1>
         <div class="form">
             <form action="maito:jrpepper1@gmail.com" method="post" enctype="text/plain">
-                <label for="name">First&LastName</label>
-                <input type="text" id="name1" name="name" placeholder="Your name..">
+                
+            <div class="form-group"> <label for="name">Name</label>
+                <input type="text" id="name1" name="name" class="form-control" placeholder="Your name..">
+            </div>
 
-                <label for="email">Email</label>
-                <input type="text" id="email" nsme="email" placeholder="example@gmail.com">
-                <label for="message">message</labe/br>
-                <textarea name="message"></textarea><br>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input placeholder="example@gmail.com" type="email" class="form-control" id="email">                
+            </div>
+
+            <div class="form-group">  
+                <label for="message">  Message</label> 
+                <textarea class="form-control" name="message"></textarea><br>
+
+            </div>
                 <input type="submit" value="Submit">
             </form>
+        </div></div>
+            <div class="col"></div>
         </div>
+        
     </section>
 
     <section class="content">
